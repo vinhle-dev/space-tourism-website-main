@@ -1,0 +1,47 @@
+.home {
+  flex: 1;
+  display: flex;
+  margin: 128px;
+  position: relative;
+}
+
+.home__container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home__text {
+  flex: 1;
+}
+
+.home__explore {
+  flex: 1;
+  height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+}
+
+.home-explore__button {
+  display: flex;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  width: 272px;
+  height: 272px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  outline: 88px solid transparent;
+  transition: color, outline 0.5s ease;
+}
+
+.home-explore__button:hover {
+  outline: 88px solid rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+}

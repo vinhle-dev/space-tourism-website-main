@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base.css"></link>
+    <link rel="stylesheet" href="./css/home.css"></link>
+  </head>
+  <body class="container">
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="./assets/shared/logo.svg" alt="Logo"/>
+        <div class="navbar-logo__line">
+          <div class="navbar__line"></div>
+        </div>
+      </div>
+      <ul class="navbar__links">
+        <li><a class="navbar-link__item text-8 active" href="#">00 HOME</a></li>
+        <li><a class="navbar-link__item text-8" href="destination-moon.html">01 DESTINATION</a></li>
+        <li><a class="navbar-link__item text-8" href="crew-commander.html">02 CREW</a></li>
+        <li><a class="navbar-link__item text-8" href="technology-vehicle.html">03 TECHNOLOGY</a></li>
+      </ul>
+    </nav>
 
-  Explore
-
-</body>
+    <main class="home">
+      <div class="home__container">
+        <div class="home__text">
+          <p class="text-5 color-secondary">SO, YOU WANT TO TRAVEL TO</p>
+          <p class="text-1">SPACE</p>
+          <p class="color-secondary">
+            Let’s face it; if you want to go to space, you might as well genuinely
+            go to outer space and not hover kind of on the edge of it. Well sit
+            back, and relax because we’ll give you a truly out of this world
+            experience!
+          </p>
+        </div>
+        <div class="home__explore">
+          <a href="destination-moon.html" class="home-explore__button text-4">EXPLORE</a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
