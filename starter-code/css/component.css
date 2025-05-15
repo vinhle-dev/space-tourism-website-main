@@ -1,0 +1,111 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px;
+}
+
+.navbar__logo {
+  /* flex: 1;
+  padding-left: 64px;
+  display: flex;
+  gap: 64px;
+  align-items: center; */
+}
+
+.navbar-logo__image {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-logo__line {
+  display: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.navbar__menu {
+  position: fixed;
+  width: 254px;
+  height: 100%;
+  padding-left: 32px;
+  top: 0;
+  right: 0;
+  background-color: rgba(11, 13, 23, 15%);
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.navbar__menu--open {
+  transform: translateX(0);
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.navbar-link__item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-white);
+  height: 19px;
+  word-spacing: 4px;
+  border-right: 3px solid transparent;
+  transition: border-right-color 0.5s ease-out;
+
+  /* text-decoration: none;
+  color: white;
+  display: flex;
+  height: 96px;
+  align-items: center;
+  word-spacing: 4px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.5s ease; */
+}
+
+.navbar-link__item.active {
+  border-right-color: var(--color-white);
+}
+
+.navbar-link__item:hover.navbar-link__item:not(.active) {
+  border-right-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-menu__button {
+  width: 24px;
+  height: 100%;
+  /* border-top: 3px solid var(--color-white); */
+  /* border-top: 3px solid var(--color-white); */
+}
+
+.navbar-menu__button::before {
+  /* content: "";
+  display: block;
+  height: 3px;
+  width: 24px;
+  height: 21px;
+  background-color: var(--color-white); */
+}
+
+.menu-close-button {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 24px;
+  text-align: end;
+}
+
+.menu-close-button__icon {
+  width: 24px;
+  height: 100%;
+}
