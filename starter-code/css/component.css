@@ -6,23 +6,15 @@
   padding: 32px 24px;
 }
 
-.navbar__logo {
-  /* flex: 1;
-  padding-left: 64px;
-  display: flex;
-  gap: 64px;
-  align-items: center; */
-}
-
 .navbar-logo__image {
   width: 40px;
   height: 40px;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .navbar-logo__line {
   display: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .navbar__menu {
@@ -73,19 +65,19 @@
   border-right-color: rgba(255, 255, 255, 0.5);
 }
 
-.navbar-menu-button__icon {
+.navbar-menu-button__icon--open {
   width: 24px;
   height: 100%;
 }
 
-.navbar-menu-close__button {
+.navbar-menu__button--close {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-right: 24px;
   text-align: end;
 }
 
-.navbar-menu-close-button__icon {
+.navbar-menu-button__icon--close {
   width: 24px;
   height: 100%;
 }
