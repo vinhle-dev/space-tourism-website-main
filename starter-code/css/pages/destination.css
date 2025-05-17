@@ -1,0 +1,102 @@
+body {
+  background: url("../../assets/destination/background-destination-desktop.jpg");
+}
+
+.destination {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.destination__title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font: var(--font-text-6);
+  height: 19px;
+  margin-bottom: 24px;
+}
+
+.destination-title__number {
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+.destination__planet {
+  background-image: url("../../assets/destination/image-moon.webp");
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 32px;
+}
+
+.destination__links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.destination-links__item {
+  display: block;
+  text-decoration: none;
+  color: var(--color-secondary);
+  height: 40px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.5s ease-out;
+  margin-bottom: 24px;
+}
+
+.destination-links__item.active {
+  border-bottom-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.destination-links__item:hover.destination-links__item:not(.active) {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.destination-planet__name {
+  font: var(--font-text-2);
+  margin-bottom: 16px;
+}
+
+.destination__text {
+  font: var(--font-text-9);
+  margin-bottom: 24px;
+  color: var(--color-secondary);
+}
+
+.destination__line {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  opacity: 0.25;
+}
+
+.destination-data__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.destination__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.destination-data__title {
+  font: 400 14px/16.8% "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  height: 17px;
+  color: var(--color-secondary);
+}
+
+.destination-data__text {
+  font: 400 28px/32.1% "Bellefair", sans-serif;
+  height: 32px;
+}

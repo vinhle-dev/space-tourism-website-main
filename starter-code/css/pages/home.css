@@ -25,7 +25,17 @@ body {
 }
 
 .home-text__heading {
-  font: var(--font-text-6);
+  font: var(--font-text-sm-6);
+  color: var(--color-secondary);
+}
+
+.home-text__title {
+  font: var(--font-text-sm-1);
+}
+
+.home-text__description {
+  font: var(--font-text-sm-9);
+  color: var(--color-secondary);
 }
 
 .home__explore {
@@ -42,6 +52,7 @@ body {
   border-radius: 50%;
   width: 144px;
   height: 144px;
+  font: var(--font-text-sm-4);
   text-decoration: none;
   justify-content: center;
   align-items: center;
@@ -66,13 +77,22 @@ body {
   }
 
   .home-text__heading {
-    font: var(--font-text-5);
+    font: var(--font-text-lg-5);
     letter-spacing: 4px;
+  }
+
+  .home-text__title {
+    font: var(--font-text-lg-1);
+  }
+
+  .home-text__description {
+    font: var(--font-text-9);
   }
 
   .home-explore__button {
     width: 272px;
     height: 272px;
+    font: var(--font-text-lg-4);
   }
 }
 
@@ -101,6 +121,10 @@ body {
   .home__text {
     flex: 1;
     align-items: flex-start;
+  }
+
+  .home-text__description {
+    font: var(--font-tex-lg-9);
   }
 
   .home__text > .text-9 {

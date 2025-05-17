@@ -19,29 +19,57 @@
       href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/base.css"></link>
-    <link rel="stylesheet" href="./css/font.css"></link>
-    <link rel="stylesheet" href="./css/component.css"></link>
-    <link rel="stylesheet" href="./css/pages/home.css"></link>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/component.css" />
+    <link rel="stylesheet" href="./css/pages/home.css" />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="navbar__logo">
-          <img class="navbar-logo__image" src="./assets/shared/logo.svg" alt="Logo"/>
+          <img
+            class="navbar-logo__image"
+            src="./assets/shared/logo.svg"
+            alt="Logo"
+          />
           <div class="navbar-logo__line">
             <div class="navbar__line"></div>
           </div>
         </div>
 
-        <div class='navbar-menu__button--open'><i class="fa-solid fa-bars navbar-menu-button__icon--open"></i></div>
+        <div class="navbar-menu__button--open">
+          <i class="fa-solid fa-bars navbar-menu-button__icon--open"></i>
+        </div>
         <div class="navbar__menu">
-          <div class='navbar-menu__button--close'><i class="fa-solid fa-xmark navbar-menu-button__icon--close"></i></div>
+          <div class="navbar-menu__button--close">
+            <i class="fa-solid fa-xmark navbar-menu-button__icon--close"></i>
+          </div>
           <ul class="navbar__links">
-            <li><a class="navbar-link__item text-8 active" href="#">00 HOME</a></li>
-            <li><a class="navbar-link__item text-8" href="destination-moon.html">01 DESTINATION</a></li>
-            <li><a class="navbar-link__item text-8" href="crew-commander.html">02 CREW</a></li>
-            <li><a class="navbar-link__item text-8" href="technology-vehicle.html">03 TECHNOLOGY</a></li>
+            <li>
+              <a class="navbar-link__item active" href="#">
+                <span class="navbar-link-item__number">00</span>
+                <span>HOME</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item" href="destination-moon.html">
+                <span class="navbar-link-item__number">01</span>
+                <span>DESTINATION</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item" href="crew-commander.html">
+                <span class="navbar-link-item__number">02</span>
+                <span>CREW</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item" href="technology-vehicle.html">
+                <span class="navbar-link-item__number">03</span>
+                <span>TECHNOLOGY</span>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -50,23 +78,27 @@
     <main class="home">
       <div class="home__container">
         <div class="home__text">
-          <p class="home-text__heading color-secondary">SO, YOU WANT TO TRAVEL TO</p>
-          <p class="text-1">SPACE</p>
-          <p class="text-9 color-secondary text--center">
-            Let’s face it; if you want to go to space, you might as well genuinely
-            go to outer space and not hover kind of on the edge of it. Well sit
-            back, and relax because we’ll give you a truly out of this world
-            experience!
+          <p class="home-text__heading">SO, YOU WANT TO TRAVEL TO</p>
+          <p class="home-text__title">SPACE</p>
+          <p class="home-text__description">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
           </p>
         </div>
         <div class="home__explore">
-          <a href="destination-moon.html" 
-          class="home-explore__button text-4">EXPLORE</a>
+          <a href="destination-moon.html" class="home-explore__button">
+            EXPLORE
+          </a>
         </div>
       </div>
     </main>
 
-    <script src="https://kit.fontawesome.com/b936442de1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b936442de1.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/component.js"></script>
   </body>
 </html>
