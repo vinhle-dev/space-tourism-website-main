@@ -18,18 +18,18 @@
 }
 
 .navbar__menu {
-  position: fixed;
   width: 254px;
   height: 100%;
   padding-left: 32px;
-  top: 0;
-  right: 0;
   background-color: rgba(11, 13, 23, 15%);
   -webkit-backdrop-filter: blur(80px);
   backdrop-filter: blur(80px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
-  z-index: 999;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -82,7 +82,6 @@
   height: 100%;
 }
 
-
 /* Tabet */
 @media (min-width: 768px) {
   /* Navbar */
@@ -106,19 +105,18 @@
   }
 
   .navbar__menu {
-    position: unset;
     width: 100%;
     padding-left: 40px;
     padding-right: 40px;
+    background-color: rgba(255, 255, 255, 5%);
+    position: unset;
+    z-index: 0;
     transform: translateX(0);
     transition: none;
-    z-index: 0;
     align-items: end;
-    background-color: rgba(255, 255, 255, 5%);
   }
 
   .navbar__links {
-    height: 100%;
     list-style: none;
     flex-direction: row;
     align-items: center;
@@ -143,33 +141,43 @@
 
 /* Desktop */
 @media (min-width: 1440px) {
-
   /* Navbar */
-  .navbar__logo {
-    /* flex: 1;
-  padding-left: 64px;
-  display: flex;
-  gap: 64px;
-  align-items: center; */
-  }
-
-  /* .navbar {
-    padding-top: 0;
-  }
-  .navbar-logo__line {
-    display: none;
+  .navbar {
+    padding: 40px 0 0 0;
+    height: 136px;
   }
 
   .navbar__logo {
-    flex: none;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .navbar__links {
     flex: 1;
-    justify-content: flex-end;
-    padding-left: 40px;
-    padding-right: 40px;
-  } */
+    padding: 0 0 0 64px;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .navbar-logo__image {
+    width: 48px;
+    height: 48px;
+  }
+
+  .navbar-logo__line {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .navbar__line {
+    position: absolute;
+    height: 1px;
+    width: calc(100% + 32px);
+    background-color: #979797;
+    opacity: 0.25;
+    z-index: 999;
+  }
+
+  .navbar__menu {
+    flex: 1;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }

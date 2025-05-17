@@ -6,6 +6,7 @@ body {
   flex: 1;
   padding: 24px;
   display: flex;
+  justify-content: center;
 }
 
 .home__container {
@@ -79,5 +80,30 @@ body {
 @media (min-width: 1440px) {
   body {
     background-image: url("../../assets/home/background-home-desktop.jpg");
+  }
+
+  .home {
+    padding: 0;
+    margin: 128px 165px;
+    position: relative;
+  }
+
+  .home__container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home__text {
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  .home__text > .text-9 {
+    text-align: left;
   }
 }
