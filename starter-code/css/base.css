@@ -1,7 +1,19 @@
 :root {
+  /* Color */
   --color-primary: #0b0d17;
   --color-secondary: #d0d6f9;
   --color-white: #ffffff;
+
+  /* Text */
+  --font-text-1: 400 80px/171.9% "Bellefair", serif;
+  --font-text-2: 400 56px/114.6% "Bellefair", serif;
+  --font-text-3: 400 24px/64.2% "Bellefair", serif;
+  --font-text-4: 400 18px/36.7% "Bellefair", serif;
+  --font-text-5: 400 20px/33.6% "Barlow Condensed", sans-serif;
+  --font-text-6: 400 16px/19.2% "Bellefair", sans-serif;
+  --font-text-7: 400 14px/16.8% "Barlow Condensed", sans-serif;
+  --font-text-8: 400 14px/19.2% "Barlow Condensed", sans-serif;
+  --font-text-9: 400 15px/180% "Barlow", sans-serif;
 }
 
 * {

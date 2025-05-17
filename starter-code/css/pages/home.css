@@ -23,6 +23,10 @@ body {
   gap: 24px;
 }
 
+.home-text__heading {
+  font: var(--font-text-6);
+}
+
 .home__explore {
   flex: 1;
   width: 100%;
@@ -48,4 +52,32 @@ body {
 .home-explore__button:hover {
   outline: 88px solid rgba(255, 255, 255, 0.1);
   color: rgba(0, 0, 0, 0.5);
+}
+
+/* Tabet */
+@media (min-width: 768px) {
+  body {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+
+  .home {
+    padding: 128px 40px;
+  }
+
+  .home-text__heading {
+    font: var(--font-text-5);
+    letter-spacing: 4px;
+  }
+
+  .home-explore__button {
+    width: 272px;
+    height: 272px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  body {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+  }
 }
