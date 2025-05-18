@@ -1,14 +1,15 @@
 body {
-  background: url("../../assets/destination/background-destination-desktop.jpg");
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
 }
 
 .destination {
+  flex: 1;
   padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
+  gap: 24px;
 }
 
 .destination__title {
@@ -16,8 +17,6 @@ body {
   align-items: center;
   gap: 24px;
   font: var(--font-text-6);
-  height: 19px;
-  margin-bottom: 24px;
 }
 
 .destination-title__number {
@@ -26,77 +25,145 @@ body {
 }
 
 .destination__planet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.planet__image {
   background-image: url("../../assets/destination/image-moon.webp");
   background-size: cover;
   height: 150px;
   width: 150px;
-  margin-bottom: 32px;
+  margin-top: 26.5px;
+  margin-bottom: 58.5px;
 }
 
-.destination__links {
+.planet__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.info__links {
   list-style: none;
   display: flex;
   gap: 32px;
-}
-
-.destination-links__item {
-  display: block;
-  text-decoration: none;
-  color: var(--color-secondary);
-  height: 40px;
-  border-bottom: 3px solid transparent;
-  transition: border-bottom-color 0.5s ease-out;
   margin-bottom: 24px;
 }
 
-.destination-links__item.active {
+.info-links__item {
+  display: flex;
+  font: var(--font-text-sm-8);
+  letter-spacing: var(--letter-spacing-8);
+  text-decoration: none;
+  color: var(--color-secondary);
+  height: 32px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.5s ease-out;
+}
+
+.info-links__item.active {
   border-bottom-color: var(--color-white);
   color: var(--color-white);
 }
 
-.destination-links__item:hover.destination-links__item:not(.active) {
+.info-links__item:hover.planet-links__item:not(.active) {
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
-.destination-planet__name {
-  font: var(--font-text-2);
-  margin-bottom: 16px;
+.info__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
-.destination__text {
-  font: var(--font-text-9);
-  margin-bottom: 24px;
+.description__name {
+  font: var(--font-text-sm-2);
+}
+
+.description__text {
+  font: var(--font-text-sm-9);
   color: var(--color-secondary);
 }
 
-.destination__line {
-  margin-top: 24px;
-  margin-bottom: 24px;
+.info__line {
   width: 100%;
   opacity: 0.25;
 }
 
-.destination-data__container {
+.info__meta {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.destination__data {
+.meta__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
 
-.destination-data__title {
-  font: 400 14px/16.8% "Barlow Condensed", sans-serif;
-  letter-spacing: 2px;
+.meta-item__title {
+  font: var(--font-text-lg-7);
+  letter-spacing: var(--letter-spacing-7);
   height: 17px;
   color: var(--color-secondary);
 }
 
-.destination-data__text {
-  font: 400 28px/32.1% "Bellefair", sans-serif;
+.meta-item__text {
+  font: var(--font-text-lg-6);
   height: 32px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+  }
+
+  .destination {
+    padding: 40px;
+  }
+
+  .destination__title {
+    font: var(--font-text-5);
+    letter-spacing: var(--letter-spacing-5);
+    align-self: flex-start;
+  }
+
+  .planet__image {
+    height: 300px;
+    width: 300px;
+    margin-top: 42px;
+    margin-bottom: 74px;
+  }
+
+  .planet__info {
+    padding: 11.5px 87px;
+  }
+
+  .info-links__item {
+    font: var(--font-text-lg-8);
+  }
+
+  .description__name {
+    font: var(--font-text-2);
+  }
+
+  .description__text {
+    font: var(--font-text-9);
+  }
+
+  .info__meta {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .meta__item {
+    flex: 1;
+  }
 }

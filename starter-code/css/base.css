@@ -5,29 +5,29 @@
   --color-white: #ffffff;
 
   /* Text */
-  --font-text-sm-1: 400 80px/171.9% "Bellefair", serif;
-  --font-text-sm-2: 400 56px/114.6% "Bellefair", serif;
-  --font-text-sm-3: 400 24px/64.2% "Bellefair", serif;
-  --font-text-sm-4: 400 18px/36.7% "Bellefair", serif;
-  --font-text-sm-6: 400 16px/19.2% "Barlow Condensed", sans-serif;
-  --font-text-sm-8: 400 14px/19.2% "Barlow Condensed", sans-serif;
-  --font-text-sm-9: 400 15px/180% "Barlow", sans-serif;
+  --font-text-sm-1: 400 80px "Bellefair", serif;
+  --font-text-sm-2: 400 56px "Bellefair", serif;
+  --font-text-sm-3: 400 24px "Bellefair", serif;
+  --font-text-sm-4: 400 18px "Bellefair", serif;
+  --font-text-sm-6: 400 16px "Barlow Condensed", sans-serif;
+  --font-text-sm-8: 400 14px "Barlow Condensed", sans-serif;
+  --font-text-sm-9: 400 15px/1.8 "Barlow", sans-serif;
 
-  --font-text-2: 400 80px/114.6% "Bellefair", serif;
-  --font-text-3: 400 40px/64.2% "Bellefair", serif;
-  --font-text-4: 400 24px/36.7% "Bellefair", serif;
-  --font-text-5: 400 20px/33.6% "Barlow Condensed", sans-serif;
-  --font-text-9: 400 16px/180% "Barlow", sans-serif;
+  --font-text-2: 400 80px "Bellefair", serif;
+  --font-text-3: 400 40px "Bellefair", serif;
+  --font-text-4: 400 24px "Bellefair", serif;
+  --font-text-5: 400 20px "Barlow Condensed", sans-serif;
+  --font-text-9: 400 16px/1.8 "Barlow", sans-serif;
 
-  --font-text-lg-1: 400 144px/171.9% "Bellefair", serif;
-  --font-text-lg-2: 400 96px/114.6% "Bellefair", serif;
-  --font-text-lg-3: 400 56px/64.2% "Bellefair", serif;
-  --font-text-lg-4: 400 32px/36.7% "Bellefair", serif;
-  --font-text-lg-5: 400 28px/33.6% "Barlow Condensed", sans-serif;
-  --font-text-lg-6: 400 28px/32.1% "Bellefair", sans-serif;
-  --font-text-lg-7: 400 14px/16.8% "Barlow Condensed", sans-serif;
-  --font-text-lg-8: 400 16px/19.2% "Barlow Condensed", sans-serif;
-  --font-text-lg-9: 400 18px/180% "Barlow", sans-serif;
+  --font-text-lg-1: 400 144px "Bellefair", serif;
+  --font-text-lg-2: 400 96px "Bellefair", serif;
+  --font-text-lg-3: 400 56px "Bellefair", serif;
+  --font-text-lg-4: 400 32px "Bellefair", serif;
+  --font-text-lg-5: 400 28px "Barlow Condensed", sans-serif;
+  --font-text-lg-6: 400 28px "Bellefair", sans-serif;
+  --font-text-lg-7: 400 14px "Barlow Condensed", sans-serif;
+  --font-text-lg-8: 400 16px "Barlow Condensed", sans-serif;
+  --font-text-lg-9: 400 18px/1.8 "Barlow", sans-serif;
 
   --letter-spacing-5: 4px;
   --letter-spacing-7: 2px;
