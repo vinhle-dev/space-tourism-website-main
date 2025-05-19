@@ -12,18 +12,6 @@ body {
   gap: 24px;
 }
 
-.destination__title {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  font: var(--font-text-6);
-}
-
-.destination-title__number {
-  font-weight: 700;
-  opacity: 0.25;
-}
-
 .destination__planet {
   display: flex;
   flex-direction: column;
@@ -145,12 +133,6 @@ body {
     padding: 40px;
   }
 
-  .destination__title {
-    font: var(--font-text-5);
-    letter-spacing: var(--letter-spacing-5);
-    align-self: flex-start;
-  }
-
   .planet__image {
     height: 300px;
     width: 300px;
@@ -192,11 +174,6 @@ body {
   .destination {
     padding: 48px 165px;
     text-align: start;
-  }
-
-  .destination__title {
-    font: var(--font-text-lg-5);
-    align-self: flex-start;
   }
 
   .destination__planet {
