@@ -40,6 +40,22 @@ body {
   margin-bottom: 58.5px;
 }
 
+.planet-image__moon {
+  background-image: url("../../assets/destination/image-moon.webp");
+}
+
+.planet-image__mars {
+  background-image: url("../../assets/destination/image-mars.png");
+}
+
+.planet-image__europa {
+  background-image: url("../../assets/destination/image-europa.webp");
+}
+
+.planet-image__titan {
+  background-image: url("../../assets/destination/image-titan.webp");
+}
+
 .planet__info {
   display: flex;
   flex-direction: column;

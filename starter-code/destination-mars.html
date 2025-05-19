@@ -1,37 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/component.css" />
+    <link rel="stylesheet" href="./css/pages/destination.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <img
+            class="navbar-logo__image"
+            src="./assets/shared/logo.svg"
+            alt="Logo"
+          />
+          <div class="navbar-logo__line">
+            <div class="navbar__line"></div>
+          </div>
+        </div>
 
-  01 Pick your destination
+        <div class="navbar-menu__button--open">
+          <i class="fa-solid fa-bars navbar-menu-button__icon--open"></i>
+        </div>
+        <div class="navbar__menu">
+          <div class="navbar-menu__button--close">
+            <i class="fa-solid fa-xmark navbar-menu-button__icon--close"></i>
+          </div>
+          <ul class="navbar__links">
+            <li>
+              <a class="navbar-link__item" href="index.html">
+                <span class="navbar-link-item__number">00</span>
+                <span>HOME</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item active" href="destination-moon.html">
+                <span class="navbar-link-item__number">01</span>
+                <span>DESTINATION</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item" href="crew-commander.html">
+                <span class="navbar-link-item__number">02</span>
+                <span>CREW</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item" href="technology-vehicle.html">
+                <span class="navbar-link-item__number">03</span>
+                <span>TECHNOLOGY</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  Moon
-  Mars
-  Europa
-  Titan
+    <main class="destination">
+      <p class="destination__title">
+        <span class="destination-title__number">01</span>
+        <span>PICK YOUR DESTINATION</span>
+      </p>
+      <div class="destination__planet">
+        <div class="planet__image planet-image__mars"></div>
 
-  Mars
+        <div class="planet__info">
+          <ul class="info__links">
+            <li>
+              <a class="info-links__item" href="#">
+                <span>MOON</span>
+              </a>
+            </li>
+            <li>
+              <a class="info-links__item active" href="destination-mars.html">
+                <span>MARS</span>
+              </a>
+            </li>
+            <li>
+              <a class="info-links__item" href="destination-europa.html">
+                <span>EUROPA</span>
+              </a>
+            </li>
+            <li>
+              <a class="info-links__item" href="destination-titan.html">
+                <span>TITAN</span>
+              </a>
+            </li>
+          </ul>
 
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
+          <div class="info__description">
+            <div class="description__name">MARS</div>
+            <div class="description__text">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle
+              Olympus Mons, the tallest planetary mountain in our solar system.
+              It’s two and a half times the size of Everest!
+            </div>
+          </div>
 
-  Avg. distance
-  225 mil. km
+          <hr class="info__line" />
 
-  Est. travel time
-  9 months
-</body>
+          <div class="info__meta">
+            <div class="meta__item">
+              <div class="meta-item__title">AVG. DISTANCE</div>
+              <div class="meta-item__text">225 MIL. KM</div>
+            </div>
+            <div class="meta__item">
+              <div class="meta-item__title">EST. TRAVEL TIME</div>
+              <div class="meta-item__text">9 MONTHS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
