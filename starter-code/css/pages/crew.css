@@ -3,6 +3,7 @@ body {
 }
 
 .crew {
+  flex: 1;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -10,26 +11,183 @@ body {
   gap: 24px;
 }
 
-.crew__title {
+.crew__member {
+  flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 24px;
-  font: var(--font-text-6);
+  gap: 32px;
 }
 
-.crew-title__number {
-  font-weight: 700;
-  opacity: 0.25;
+.member__details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-top: 40px;
+}
+
+.member__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.member__info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.member__position {
+  font: var(--font-text-sm-4);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.member__name {
+  font: var(--font-text-sm-3);
+  text-transform: uppercase;
+}
+
+.member__description {
+  flex: 1;
+  font: var(--font-text-sm-9);
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.member__links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.member-links__item {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1744);
+}
+
+.member-links__item.active {
+  background-color: var(--color-white);
+}
+
+.member-links__item:hover.member-links__item:not(.active) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.member__image {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 340px;
+  width: 340px;
+  margin: 5px 27.88px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.member-image__commander {
+  background-image: url("../../assets/crew/image-douglas-hurley.webp");
 }
 
 @media (min-width: 768px) {
   body {
     background-image: url("../../assets/crew/background-crew-tablet.jpg");
   }
+
+  .crew {
+    padding: 40px;
+  }
+
+  .member__info > div {
+    gap: 16px;
+  }
+
+  .member__position {
+    font: var(--font-text-4);
+  }
+
+  .member__name {
+    font: var(--font-text-3);
+  }
+
+  .member__description {
+    font: var(--font-text-9);
+  }
+
+  .member__image {
+    height: 560px;
+    width: 446.74px;
+    margin: 0 120.63px;
+  }
 }
 
 @media (min-width: 1024px) {
   body {
     background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  }
+
+  .crew {
+    padding: 48px 165px;
+  }
+
+  .crew__member {
+    flex-direction: row;
+  }
+
+  .member__details {
+    align-self: stretch;
+    gap: 40px;
+    padding-top: 0;
+    align-items: flex-start;
+  }
+
+  .member__info {
+    align-items: flex-start;
+  }
+
+  .member__info > div {
+    flex: 1;
+    align-items: flex-start;
+
+    justify-content: end;
+  }
+
+  .member__position {
+    font: var(--font-text-lg-4);
+  }
+
+  .member__name {
+    font: var(--font-text-lg-3);
+  }
+
+  .member__description {
+    flex: 0.5;
+    height: auto;
+    font: var(--font-text-9);
+    text-align: start;
+  }
+
+  .member__links {
+    padding-bottom: 48px;
+  }
+
+  .member__image {
+    flex: 1;
+    height: 676px;
+    width: 100%;
+    margin: 29px 0;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
   }
 }

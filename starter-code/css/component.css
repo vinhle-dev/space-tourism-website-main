@@ -94,6 +94,7 @@
   align-items: center;
   gap: 24px;
   font: var(--font-text-6);
+  text-transform: uppercase;
 }
 
 .steps__number {
