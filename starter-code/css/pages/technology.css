@@ -1,0 +1,224 @@
+body {
+  background-image: url("../../assets/technology/background-technology-mobile.jpg");
+}
+
+.technology {
+  flex: 1;
+  padding: 24px 24px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.technology__component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.component__image {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 376px;
+  width: calc(100% + 48px);
+  margin-top: 64px;
+  background-size: cover;
+  background-position: center;
+}
+
+.component-image__vehicle {
+  background-image: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+}
+
+.component-image__capsule {
+  background-image: url("../../assets/technology/image-space-capsule-portrait.jpg");
+}
+
+.component-image__spaceport {
+  background-image: url("../../assets/technology/image-spaceport-portrait.jpg");
+}
+
+.component__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.component__links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.component-links__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font: var(--font-text-sm-4);
+}
+
+.component-links__item.active {
+  background-color: var(--color-white);
+  color: black;
+}
+
+.component-links__item:hover.component-links__item:not(.active) {
+  border-color: var(--color-white);
+}
+
+.component__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.component__info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.component__title {
+  font: var(--font-text-sm-4);
+  color: rgba(255, 255, 255, 0.5042);
+  text-transform: uppercase;
+}
+
+.component__name {
+  font: var(--font-text-sm-3);
+  text-transform: uppercase;
+}
+
+.component__description {
+  flex: 1;
+  font: var(--font-text-sm-9);
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("../../assets/technology/background-technology-tablet.jpg");
+  }
+
+  .technology {
+    padding: 40px;
+  }
+
+  .component__image {
+    flex-basis: 357px;
+    width: calc(100% + 80px);
+    background-position: center;
+  }
+
+  .component-image__vehicle {
+    background-image: url("../../assets/technology/image-launch-vehicle-landscape.jpg");
+  }
+
+  .component-image__capsule {
+    background-image: url("../../assets/technology/image-space-capsule-landscape.jpg");
+  }
+
+  .component-image__spaceport {
+    background-image: url("../../assets/technology/image-spaceport-landscape.jpg");
+  }
+
+  .component-links__item {
+    width: 56px;
+    height: 56px;
+    font: var(--font-text-4);
+  }
+
+  .component__title {
+    font: var(--font-text-4);
+  }
+
+  .component__name {
+    font: var(--font-text-3);
+  }
+
+  .component__description {
+    font: var(--font-text-9);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+  }
+
+  .technology {
+    padding: 48px 0 48px 165px;
+  }
+
+  .technology__component {
+    flex-direction: row-reverse;
+  }
+
+  .component__image {
+    flex: 1;
+    height: 600px;
+    margin-bottom: 64px;
+  }
+
+  .component-image__vehicle {
+    background-image: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+  }
+
+  .component-image__capsule {
+    background-image: url("../../assets/technology/image-space-capsule-portrait.jpg");
+  }
+
+  .component-image__spaceport {
+    background-image: url("../../assets/technology/image-spaceport-portrait.jpg");
+  }
+
+  .component__details {
+    flex: 1;
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .component__links {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .component-links__item {
+    height: 80px;
+    width: 80px;
+    font: var(--font-text-lg-4);
+  }
+
+  .component__info {
+    align-items: flex-start;
+  }
+
+  .component__info > div {
+    align-items: flex-start;
+  }
+
+  .component__title {
+    font: var(--font-text-lg-4);
+  }
+
+  .component__name {
+    font: var(--font-text-lg-3);
+  }
+
+  .component__description {
+    text-align: start;
+    font: var(--font-text-lg-9);
+  }
+}
