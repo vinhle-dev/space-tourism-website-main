@@ -114,6 +114,11 @@
     padding: 24px 40px;
   }
 
+  .navbar__logo > a {
+    display: flex;
+    align-items: center;
+  }
+
   .navbar-logo__image {
     width: 48px;
     height: 48px;
