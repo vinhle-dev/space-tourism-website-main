@@ -1,37 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
 
-  01 Pick your destination
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/component.css" />
+    <link rel="stylesheet" href="./css/pages/destination.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <img
+            class="navbar-logo__image"
+            src="./assets/shared/logo.svg"
+            alt="Logo"
+          />
+          <div class="navbar-logo__line">
+            <div class="navbar__line"></div>
+          </div>
+        </div>
 
-  Moon
-  Mars
-  Europa
-  Titan
+        <div class="navbar-menu__button--open">
+          <i class="fa-solid fa-bars navbar-menu-button__icon--open"></i>
+        </div>
+        <div class="navbar__menu">
+          <div class="navbar-menu__button--close">
+            <i class="fa-solid fa-xmark navbar-menu-button__icon--close"></i>
+          </div>
+          <ul class="navbar__links">
+            <li>
+              <a class="navbar-link__item" href="index.html">
+                <span class="navbar-link-item__number">00</span>
+                <span>HOME</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item active" href="destination-moon.html">
+                <span class="navbar-link-item__number">01</span>
+                <span>DESTINATION</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item" href="crew-commander.html">
+                <span class="navbar-link-item__number">02</span>
+                <span>CREW</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item" href="technology-vehicle.html">
+                <span class="navbar-link-item__number">03</span>
+                <span>TECHNOLOGY</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  Titan
+    <main class="destination">
+      <p class="destination__title">
+        <span class="destination-title__number">01</span>
+        <span>PICK YOUR DESTINATION</span>
+      </p>
+      <div class="destination__planet">
+        <div class="planet__image planet-image__titan"></div>
 
-  The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.
+        <div class="planet__info">
+          <ul class="info__links">
+            <li>
+              <a class="info-links__item" href="destination-moon.html">
+                <span>MOON</span>
+              </a>
+            </li>
+            <li>
+              <a class="info-links__item" href="destination-mars.html">
+                <span>MARS</span>
+              </a>
+            </li>
+            <li>
+              <a class="info-links__item" href="destination-europa.html">
+                <span>EUROPA</span>
+              </a>
+            </li>
+            <li>
+              <a class="info-links__item active" href="#">
+                <span>TITAN</span>
+              </a>
+            </li>
+          </ul>
 
-  Avg. distance
-  1.6 bil. km
+          <div class="info__description">
+            <div class="description__name">TITAN</div>
+            <div class="description__text">
+              The only moon known to have a dense atmosphere other than Earth,
+              Titan is a home away from home (just a few hundred degrees
+              colder!). As a bonus, you get striking views of the Rings of
+              Saturn.
+            </div>
+          </div>
 
-  Est. travel time
-  7 years
-</body>
+          <hr class="info__line" />
+
+          <div class="info__meta">
+            <div class="meta__item">
+              <div class="meta-item__title">AVG. DISTANCE</div>
+              <div class="meta-item__text">1.6 BIL. KM</div>
+            </div>
+            <div class="meta__item">
+              <div class="meta-item__title">EST. TRAVEL TIME</div>
+              <div class="meta-item__text">7 YEARS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/b936442de1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/component.js"></script>
+  </body>
 </html>
