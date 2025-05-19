@@ -100,6 +100,18 @@ body {
   background-image: url("../../assets/crew/image-douglas-hurley.webp");
 }
 
+.member-image__engineer {
+  background-image: url("../../assets/crew/image-anousheh-ansari.webp");
+}
+
+.member-image__pilot {
+  background-image: url("../../assets/crew/image-mark-shuttleworth.webp");
+}
+
+.member-image__specialist {
+  background-image: url("../../assets/crew/image-victor-glover.webp");
+}
+
 @media (min-width: 768px) {
   body {
     background-image: url("../../assets/crew/background-crew-tablet.jpg");
@@ -185,9 +197,9 @@ body {
   .member__image {
     flex: 1;
     height: 676px;
-    width: 100%;
+    width: 540px;
     margin: 29px 0;
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   }
 }

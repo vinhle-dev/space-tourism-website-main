@@ -1,27 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
 
-  02 Meet your crew
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/component.css" />
 
-  Flight Engineer
-  Anousheh Ansari
+    <link rel="stylesheet" href="./css/pages/crew.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a class="navbar-logo__image" href="index.html">
+            <img src="./assets/shared/logo.svg" alt="Logo" />
+          </a>
+          <div class="navbar-logo__line">
+            <div class="navbar__line"></div>
+          </div>
+        </div>
 
-  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-  fly to the ISS, and the first Iranian in space. 
-</body>
+        <div class="navbar-menu__button--open">
+          <i class="fa-solid fa-bars navbar-menu-button__icon--open"></i>
+        </div>
+        <div class="navbar__menu">
+          <div class="navbar-menu__button--close">
+            <i class="fa-solid fa-xmark navbar-menu-button__icon--close"></i>
+          </div>
+          <ul class="navbar__links">
+            <li>
+              <a class="navbar-link__item" href="index.html">
+                <span class="navbar-link-item__number">00</span>
+                <span>HOME</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item" href="destination-moon.html">
+                <span class="navbar-link-item__number">01</span>
+                <span>DESTINATION</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item active" href="crew-commander.html">
+                <span class="navbar-link-item__number">02</span>
+                <span>CREW</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link__item" href="technology-vehicle.html">
+                <span class="navbar-link-item__number">03</span>
+                <span>TECHNOLOGY</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="crew">
+      <p class="steps__title">
+        <span class="steps__number">02</span>
+        <span>Meet your crew</span>
+      </p>
+
+      <div class="crew__member">
+        <div class="member__details">
+          <div class="member__info">
+            <div>
+              <p class="member__position">Flight Engineer</p>
+              <p class="member__name">Anousheh Ansari</p>
+            </div>
+
+            <p class="member__description">
+              Anousheh Ansari is an Iranian American engineer and co-founder of
+              Prodea Systems. Ansari was the fourth self-funded space tourist,
+              the first self-funded woman to fly to the ISS, and the first
+              Iranian in space.
+            </p>
+          </div>
+
+          <ul class="member__links">
+            <li>
+              <a class="member-links__item" href="crew-commander.html"></a>
+            </li>
+            <li>
+              <a class="member-links__item" href="crew-specialist.html"></a>
+            </li>
+            <li>
+              <a class="member-links__item" href="crew-pilot.html"></a>
+            </li>
+            <li>
+              <a class="member-links__item active" href="#"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="member__image member-image__engineer"></div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/b936442de1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/component.js"></script>
+  </body>
 </html>
